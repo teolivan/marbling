@@ -20,6 +20,7 @@ class Drop {
             //putting it into the array
             this.vertices[i] = v;
         }
+        this.col = random(0,200);
     }
 
     marble(other) {
@@ -39,7 +40,8 @@ class Drop {
     }
 
     show() {
-        fill(0);
+        fill(this.col);
+        noStroke();
         beginShape();
         //iterate over vertices
         for(let v of this.vertices) {
