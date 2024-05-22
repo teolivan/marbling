@@ -9,6 +9,12 @@ function setup() {
 
 function mousePressed() {
   let drop = new Drop(mouseX, mouseY, 50);
+
+  //process all of the drops in the array before the other drop gets added into the array
+  for(let other of drops) {
+    drop.marble(other);
+  }
+
   drops.push(drop);
 }
 
