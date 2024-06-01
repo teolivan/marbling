@@ -4,7 +4,7 @@ let drops = [];
 function setup() {
   createCanvas(700, 600);
   // Add 20 ink drops at the center of the canvas
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 50; i++) {
     let rand = new random(10, 75);
     addInk(width/2, height/2, 50);
   }
